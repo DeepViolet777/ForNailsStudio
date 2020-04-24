@@ -1,0 +1,36 @@
+@import "normalize.css";
+
+@font-face {
+	font-family: 'ALS Alumna';
+	src: url('../fonts/ALS_Alumna.eot');
+	src: local('☺'), url('../fonts/ALS_Alumna.woff') format('woff'), url('../fonts/ALS_Alumna.ttf') format('truetype'), url('../fonts/ALS_Alumna.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Museo Sans Cyrl';
+	src: url('../fonts/museo_sans_cyrl_300.eot');
+	src: local('☺'), url('../fonts/museo_sans_cyrl_300.woff') format('woff'), url('../fonts/museo_sans_cyrl_300.ttf') format('truetype'), url('../fonts/museo_sans_cyrl_300.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@mixin font-alumna {
+    font-family: 'ALS Alumna', sans-serif;
+}
+
+@mixin font-museo {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+}
+
+*, *::before, *::after{
+box-sizing: border-box;
+}
+
+body{
+margin: 0;
+padding: 0;
+background-color: #ffffff;
+color: #000000;
+}
