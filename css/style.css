@@ -10,9 +10,41 @@
 
 @font-face {
   font-family: 'Museo Sans Cyrl';
+  src: url("../fonts/MuseoSansCyrl.eot");
+  src: local("☺"), url("../fonts/MuseoSansCyrl.woff") format("woff"), url("../fonts/MuseoSansCyrl.ttf") format("truetype"), url("../fonts/MuseoSansCyrl.svg") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
   src: url("../fonts/museo_sans_cyrl_300.eot");
   src: local("☺"), url("../fonts/museo_sans_cyrl_300.woff") format("woff"), url("../fonts/museo_sans_cyrl_300.ttf") format("truetype"), url("../fonts/museo_sans_cyrl_300.svg") format("svg");
   font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url("../fonts/museo_sans_cyrl_500.eot");
+  src: local("☺"), url("../fonts/museo_sans_cyrl_500.woff") format("woff"), url("../fonts/museo_sans_cyrl_500.ttf") format("truetype"), url("../fonts/museo_sans_cyrl_500.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url("../fonts/MuseoSansCyrl_700.eot");
+  src: local("☺"), url("../fonts/MuseoSansCyrl_700.woff") format("woff"), url("../fonts/MuseoSansCyrl_700.ttf") format("truetype"), url("../fonts/MuseoSansCyrl_700.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Conv_MuseoSansCyrl_900';
+  src: url("fonts/MuseoSansCyrl_900.eot");
+  src: local("☺"), url("fonts/MuseoSansCyrl_900.woff") format("woff"), url("fonts/MuseoSansCyrl_900.ttf") format("truetype"), url("fonts/MuseoSansCyrl_900.svg") format("svg");
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -43,9 +75,13 @@ a {
 }
 
 .top-line {
+  top: 0;
   height: 100px;
+  width: 100%;
   position: fixed;
+  background-color: #FFFFFF;
   font-family: 'Museo Sans Cyrl', sans-serif;
+  z-index: 100;
 }
 
 .top-line__content {
@@ -121,6 +157,10 @@ a {
   margin-top: 10px;
 }
 
+.btn-wrap {
+  position: relative;
+}
+
 .signup-btn {
   display: inline-block;
   outline: none;
@@ -128,7 +168,7 @@ a {
   height: 45px;
   position: absolute;
   top: 25px;
-  right: -215px;
+  right: -140px;
   border: 0;
   background: linear-gradient(257.69deg, #DBB972 14.36%, #F3D28E 51.49%, #DBB972 91.31%);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
@@ -226,5 +266,32 @@ a {
   transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
   transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
   transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
+}
+
+.main-screen {
+  margin-top: 100px;
+  height: 796px;
+  background-image: url(../img/header-bg.jpg);
+  background-size: cover;
+}
+
+.main__big-txt {
+  font-family: 'ALS Alumna', sans-serif;
+  position: absolute;
+  width: 688px;
+  height: 190px;
+  left: calc(50% - 688px/2 - 226px);
+  top: 229px;
+  font-size: 62px;
+  line-height: 71px;
+  color: #FFFFFF;
+}
+
+.main__big-txt span {
+  color: #DBB972;
+}
+
+.invisible {
+  visibility: hidden;
 }
 /*# sourceMappingURL=style.css.map */

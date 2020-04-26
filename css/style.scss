@@ -10,11 +10,46 @@
 
 @font-face {
 	font-family: 'Museo Sans Cyrl';
+	src: url('../fonts/MuseoSansCyrl.eot');
+	src: local('☺'), url('../fonts/MuseoSansCyrl.woff') format('woff'), url('../fonts/MuseoSansCyrl.ttf') format('truetype'), url('../fonts/MuseoSansCyrl.svg') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Museo Sans Cyrl';
 	src: url('../fonts/museo_sans_cyrl_300.eot');
 	src: local('☺'), url('../fonts/museo_sans_cyrl_300.woff') format('woff'), url('../fonts/museo_sans_cyrl_300.ttf') format('truetype'), url('../fonts/museo_sans_cyrl_300.svg') format('svg');
 	font-weight: 300;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'Museo Sans Cyrl';
+	src: url('../fonts/museo_sans_cyrl_500.eot');
+	src: local('☺'), url('../fonts/museo_sans_cyrl_500.woff') format('woff'), url('../fonts/museo_sans_cyrl_500.ttf') format('truetype'), url('../fonts/museo_sans_cyrl_500.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Museo Sans Cyrl';
+	src: url('../fonts/MuseoSansCyrl_700.eot');
+	src: local('☺'), url('../fonts/MuseoSansCyrl_700.woff') format('woff'), url('../fonts/MuseoSansCyrl_700.ttf') format('truetype'), url('../fonts/MuseoSansCyrl_700.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Museo Sans Cyrl';
+	src: url('../fonts/MuseoSansCyrl_900.eot');
+	src: local('☺'), url('../fonts/MuseoSansCyrl_900.woff') format('woff'), url('../fonts/MuseoSansCyrl_900.ttf') format('truetype'), url('../fonts/MuseoSansCyrl_900.svg') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+
+/*==Mixins==*/
 
 @mixin font-alumna {
     font-family: 'ALS Alumna', sans-serif;
@@ -23,6 +58,7 @@
 @mixin font-museo {
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
+
 
 /*==Variables==*/
 $gold: #DBB972;
@@ -54,9 +90,13 @@ a{
 }
 
 .top-line{
+	top: 0;
 	height: 100px;
+	width: 100%;
 	position: fixed;
+	background-color: #FFFFFF;
 	@include font-museo;
+	z-index: 100;
 
 	&__content{
 		display: flex;
@@ -123,6 +163,10 @@ a{
 	margin-top: 10px;
 }
 
+.btn-wrap{
+	position: relative;
+}
+
 .signup-btn{
 display: inline-block;
 outline: none;
@@ -130,7 +174,7 @@ width: 123px;
 height: 45px;
 position: absolute;
 top: 25px;
-right: -215px;
+right: -140px;
 border: 0;
 background: linear-gradient(257.69deg, #DBB972 14.36%, #F3D28E 51.49%, #DBB972 91.31%);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
@@ -138,8 +182,6 @@ border-radius: 22.5px;
 font-weight: 600;
 font-size: 15px;
 line-height: 18px;
-//display: flex;
-//align-items: center;
 text-align: center;
 color: #FFFFFF;
 transition: .2s ease;
@@ -212,3 +254,31 @@ background: linear-gradient(80deg, #F3D28E 14.36%,#DBB972 51.49%, #DBB972 91.31%
 		transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	  }
 	  
+
+.main-screen{
+	margin-top: 100px;
+	height: 796px;
+	background-image: url(../img/header-bg.jpg);
+	background-size: cover;
+}
+
+.main__big-txt{
+	@include font-alumna;
+position: absolute;
+width: 688px;
+height: 190px;
+left: calc(50% - 688px/2 - 226px);
+top: 229px;
+font-size: 62px;
+line-height: 71px;
+color: #FFFFFF;
+
+	span{
+		color: $gold;
+	}
+
+}
+
+.invisible{
+	visibility: hidden;
+}
