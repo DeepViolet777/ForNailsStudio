@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url(c:\Users\Володя\Documents\Ann\Drafts\ForNails\css\normalize.css);
-
 @font-face {
   font-family: 'ALS Alumna';
   src: url("../fonts/ALS_Alumna.eot");
@@ -17,15 +16,215 @@
   font-style: normal;
 }
 
+/*==Variables==*/
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
+  font-family: 'ALS Alumna', sans-serif;
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
   color: #000000;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top-line {
+  height: 100px;
+  position: fixed;
+  font-family: 'Museo Sans Cyrl', sans-serif;
+}
+
+.top-line__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 86%;
+  margin: 0 auto;
+}
+
+.nav-menu {
+  margin-left: 12px;
+}
+
+.nav-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 40px 37px auto;
+  width: 373px;
+  height: 23px;
+  line-height: 19px;
+}
+
+.nav-menu__list a {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-menu__list a:hover {
+  color: #DBB972;
+}
+
+.contact-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 27px 0px 28px 122px;
+}
+
+.contact-tel {
+  padding: 13px 0 9px;
+  height: 23px;
+  width: 151px;
+  color: #000000;
+  position: relative;
+}
+
+.contact-tel::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: -20px;
+  width: 13px;
+  height: 13px;
+  background-image: url(../img/tel.svg);
+}
+
+.contact-whatsapp {
+  height: 23px;
+  width: 23px;
+  background-image: url(../img/whatsapp.svg);
+  margin-top: 10px;
+}
+
+.contact-telegram {
+  height: 23px;
+  width: 23px;
+  background-image: url(../img/telegram.svg);
+  margin-left: 12px;
+  margin-top: 10px;
+}
+
+.signup-btn {
+  display: inline-block;
+  outline: none;
+  width: 123px;
+  height: 45px;
+  position: absolute;
+  top: 25px;
+  right: -215px;
+  border: 0;
+  background: linear-gradient(257.69deg, #DBB972 14.36%, #F3D28E 51.49%, #DBB972 91.31%);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 22.5px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.signup-btn:hover, .signup-btn :focus {
+  background: linear-gradient(80deg, #F3D28E 14.36%, #DBB972 51.49%, #DBB972 91.31%);
+}
+
+.signup-btn:active {
+  -webkit-box-shadow: inset 0px 4px 4px -1px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0px 4px 4px -1px rgba(0, 0, 0, 0.1);
+}
+
+.menu-icon-wrapper {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 38px;
+  margin-left: 165px;
+}
+
+.menu-icon {
+  position: relative;
+  width: 16px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.menu-icon::before {
+  position: absolute;
+  left: 0;
+  top: -5px;
+  content: '';
+  width: 16px;
+  height: 2px;
+  background-color: #000000;
+  -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+}
+
+.menu-icon::after {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  content: '';
+  width: 16px;
+  height: 2px;
+  background-color: #000000;
+  -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+}
+
+.menu-icon.menu-icon-active {
+  background-color: transparent;
+}
+
+.menu-icon.menu-icon-active::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+  -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
+}
+
+.menu-icon.menu-icon-active::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+  -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
 }
 /*# sourceMappingURL=style.css.map */
