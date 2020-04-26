@@ -41,13 +41,14 @@
 }
 
 @font-face {
-  font-family: 'Conv_MuseoSansCyrl_900';
-  src: url("fonts/MuseoSansCyrl_900.eot");
-  src: local("☺"), url("fonts/MuseoSansCyrl_900.woff") format("woff"), url("fonts/MuseoSansCyrl_900.ttf") format("truetype"), url("fonts/MuseoSansCyrl_900.svg") format("svg");
-  font-weight: normal;
+  font-family: 'Museo Sans Cyrl';
+  src: url("../fonts/MuseoSansCyrl_900.eot");
+  src: local("☺"), url("../fonts/MuseoSansCyrl_900.woff") format("woff"), url("../fonts/MuseoSansCyrl_900.ttf") format("truetype"), url("../fonts/MuseoSansCyrl_900.svg") format("svg");
+  font-weight: 900;
   font-style: normal;
 }
 
+/*==Mixins==*/
 /*==Variables==*/
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
@@ -90,6 +91,11 @@ a {
   display: flex;
   width: 86%;
   margin: 0 auto;
+}
+
+.top-logo {
+  display: block;
+  margin-left: -50px;
 }
 
 .nav-menu {
@@ -164,8 +170,7 @@ a {
 .signup-btn {
   display: inline-block;
   outline: none;
-  width: 123px;
-  height: 45px;
+  padding: 15px 17px;
   position: absolute;
   top: 25px;
   right: -140px;
@@ -270,9 +275,11 @@ a {
 
 .main-screen {
   margin-top: 100px;
-  height: 796px;
+  height: 800px;
   background-image: url(../img/header-bg.jpg);
   background-size: cover;
+  color: #FFFFFF;
+  font-family: 'Museo Sans Cyrl', sans-serif;
 }
 
 .main__big-txt {
@@ -280,11 +287,11 @@ a {
   position: absolute;
   width: 688px;
   height: 190px;
-  left: calc(50% - 688px/2 - 226px);
-  top: 229px;
+  left: 160px;
+  top: 218px;
   font-size: 62px;
   line-height: 71px;
-  color: #FFFFFF;
+  margin-bottom: 46px;
 }
 
 .main__big-txt span {
@@ -293,5 +300,50 @@ a {
 
 .invisible {
   visibility: hidden;
+}
+
+.main__small-txt {
+  position: absolute;
+  width: 334px;
+  height: 52px;
+  left: 162px;
+  top: 510px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  opacity: 0.7;
+}
+
+.btn-discount {
+  border: 0;
+  outline: none;
+  position: absolute;
+  left: 150px;
+  top: 620px;
+  padding: 20px;
+  background: linear-gradient(251.94deg, #DBB972 14.36%, #F3D28E 51.49%, #DBB972 91.31%);
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.btn-discount:hover, .btn-discount :focus {
+  background: linear-gradient(80deg, #F3D28E 14.36%, #DBB972 51.49%, #DBB972 91.31%);
+  -webkit-box-shadow: 0px 4px 30px rgba(219, 185, 114, 0.6);
+          box-shadow: 0px 4px 30px rgba(219, 185, 114, 0.6);
+}
+
+.btn-discount:active {
+  -webkit-box-shadow: inset 0px 4px 30px -1px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0px 4px 30px -1px rgba(0, 0, 0, 0.6);
 }
 /*# sourceMappingURL=style.css.map */

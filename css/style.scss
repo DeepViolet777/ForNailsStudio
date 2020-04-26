@@ -105,6 +105,11 @@ a{
 	}
 }
 
+.top-logo{
+display: block;
+margin-left: -50px;
+}
+
 .nav-menu {
 	margin-left: 12px;
 
@@ -170,8 +175,7 @@ a{
 .signup-btn{
 display: inline-block;
 outline: none;
-width: 123px;
-height: 45px;
+padding: 15px 17px;
 position: absolute;
 top: 25px;
 right: -140px;
@@ -257,21 +261,23 @@ background: linear-gradient(80deg, #F3D28E 14.36%,#DBB972 51.49%, #DBB972 91.31%
 
 .main-screen{
 	margin-top: 100px;
-	height: 796px;
+	height: 800px;
 	background-image: url(../img/header-bg.jpg);
 	background-size: cover;
+	color: #FFFFFF;
+	@include font-museo;
 }
 
 .main__big-txt{
-	@include font-alumna;
+@include font-alumna;
 position: absolute;
 width: 688px;
 height: 190px;
-left: calc(50% - 688px/2 - 226px);
-top: 229px;
+left: 160px;
+top: 218px;
 font-size: 62px;
 line-height: 71px;
-color: #FFFFFF;
+margin-bottom: 46px;
 
 	span{
 		color: $gold;
@@ -281,4 +287,49 @@ color: #FFFFFF;
 
 .invisible{
 	visibility: hidden;
+}
+
+.main__small-txt{
+position: absolute;
+width: 334px;
+height: 52px;
+left: 162px;
+top: 510px;
+font-weight: 300;
+font-size: 18px;
+line-height: 24px;
+opacity: 0.7;
+
+}
+
+.btn-discount{
+border: 0;
+outline: none;
+position: absolute;
+left: 150px;
+top: 620px;
+padding: 20px;
+background: linear-gradient(251.94deg, #DBB972 14.36%, #F3D28E 51.49%, #DBB972 91.31%);
+border-radius: 30px;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+
+&:hover,:focus{
+	background: linear-gradient(80deg, #F3D28E 14.36%,#DBB972 51.49%, #DBB972 91.31%);
+	box-shadow: 0px 4px 30px rgba(219, 185, 114, 0.6);
+	}
+	
+&:active{
+    box-shadow: inset  0px 4px 30px -1px rgba(0, 0, 0, 0.6);
+	}
+
+
+
+
+
 }
