@@ -352,12 +352,12 @@ h2 {
           box-shadow: inset 0px 4px 30px -1px rgba(0, 0, 0, 0.6);
 }
 
-.advantages {
+.benifits {
   height: 354px;
   border-bottom: 2px solid #000000;
 }
 
-.adv-container {
+.benifits-container {
   width: 1080px;
   height: 228px;
   margin: 70px auto 56px;
@@ -370,7 +370,7 @@ h2 {
   text-align: center;
 }
 
-.advantages-item {
+.benifits-item {
   width: 320px;
 }
 
@@ -480,6 +480,11 @@ h2 {
   background-image: url(../img/round_arrows.svg);
 }
 
+.works-show_more_btn:hover, .works-show_more_btn :focus {
+  -webkit-box-shadow: inset 0px 4px 30px -1px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0px 4px 30px -1px rgba(0, 0, 0, 0.1);
+}
+
 .promo {
   color: #FFFFFF;
   height: 840px;
@@ -531,6 +536,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 5px;
 }
 
 .promo-item:nth-child(1) {
@@ -558,8 +564,7 @@ h2 {
   line-height: 1.3;
   font-weight: 400;
   opacity: 0.8;
-  border: 2px solid red;
-  margin-top: 1px;
+  margin-top: 7px;
   margin-left: 4px;
 }
 
@@ -574,13 +579,12 @@ h2 {
 }
 
 .promo-text {
-  margin-top: -1px;
+  margin-top: 3px;
   font-size: 14px;
   line-height: 1.3;
   font-weight: 300;
   opacity: 0.8;
   width: 295px;
-  border: 2px solid red;
 }
 
 .promo-price {
@@ -599,6 +603,36 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 6px;
+}
+
+.promo .old-price {
+  color: #ABABAB;
+  font-size: 20px;
+  line-height: 1.3;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  opacity: 0.8;
+}
+
+.promo .old-price::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 25px;
+  background-image: url(../img/Old-ruble.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 6px;
+}
+
+.promo .price-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 130px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .promo-about_btn {
@@ -645,5 +679,59 @@ h2 {
 .promo-btn:active {
   -webkit-box-shadow: inset 0px 4px 30px -1px rgba(0, 0, 0, 0.6);
           box-shadow: inset 0px 4px 30px -1px rgba(0, 0, 0, 0.6);
+}
+
+.promo .promo-2 .promo-header::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 2px;
+  background-color: #DBB972;
+  top: 40px;
+  left: 145px;
+}
+
+.promo .promo-3 .promo-header::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 2px;
+  background-color: #DBB972;
+  top: 35px;
+  left: 100px;
+}
+
+.promo_slider-arrows {
+  margin: 38px auto 42px;
+  border: 2px solid red;
+  width: 176px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.arrow-backward {
+  background-image: url(../img/arrow-backward.svg);
+  width: 16px;
+  height: 11px;
+  opacity: 0.5;
+}
+
+.arrow-backward:hover, .arrow-backward :focus {
+  opacity: 1;
+}
+
+.arrow-forward {
+  background-image: url(../img/arrow-forward.svg);
+  width: 16px;
+  height: 11px;
+  opacity: 0.5;
+}
+
+.arrow-forward:hover, .arrow-forward :focus {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
