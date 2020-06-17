@@ -77,7 +77,6 @@ $gold: #DBB972;
 body {
 	height: 100%;
 	width: 100%;
-	max-width: 1442px;
 	font-family: 'ALS Alumna', sans-serif;
 	font-family: 'Museo Sans Cyrl', sans-serif;
 	font-size: 16px;
@@ -236,6 +235,12 @@ margin: 0 auto;
 
 //==HEADER==//
 
+
+.main-header{
+	margin: 0 auto;
+}
+
+
 .top-line {
 	top: 0;
 	height: 100px;
@@ -247,18 +252,22 @@ margin: 0 auto;
 
 	&__content {
 		display: flex;
-		width: 86%;
+		justify-content: space-between;
+		width: 1238px;
+		height: 100px;
 		margin: 0 auto;
+		//border: 2px solid red;
 	}
 }
 
 .top-logo {
 	display: block;
-	margin-left: -50px;
+	//border: 2px solid blue;
 }
 
 .nav-menu {
 	margin-left: 12px;
+	//border: 2px solid blue;
 
 	&__list {
 		display: flex;
@@ -280,7 +289,9 @@ margin: 0 auto;
 
 .contact-menu {
 	display: flex;
-	margin: 27px 0px 28px 122px;
+	justify-content: space-between;
+	margin-top: 27px;
+	//border: 2px solid blue;
 }
 
 .contact-tel {
@@ -316,17 +327,15 @@ margin: 0 auto;
 	margin-top: 10px;
 }
 
-.btn-wrap {
-	position: relative;
-}
+//.btn-wrap {
+	//border: 2px solid blue;
+//}
 
 .signup-btn {
-	display: inline-block;
+	display: block;
 	outline: none;
-	padding: 15px 17px;
-	position: absolute;
-	top: 25px;
-	right: -140px;
+	padding: 15px 20px;
+	margin-top: 25px;
 	border: 0;
 	background: linear-gradient(257.69deg, #DBB972 14.36%, #F3D28E 51.49%, #DBB972 91.31%);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
@@ -341,7 +350,7 @@ margin: 0 auto;
 	&:hover,
 	:focus {
 		background: linear-gradient(80deg, #F3D28E 14.36%, #DBB972 51.49%, #DBB972 91.31%);
-		;
+		box-shadow: none;
 	}
 
 	&:active {
@@ -350,14 +359,13 @@ margin: 0 auto;
 }
 
 .menu-icon-wrapper {
-	position: absolute;
 	width: 16px;
 	height: 16px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-top: 38px;
-	margin-left: 165px;
+	//border: 2px solid blue;
 }
 
 
