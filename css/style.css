@@ -149,9 +149,7 @@ h2 {
   margin-left: 600px;
   margin-top: -22px;
   position: relative;
-}
-
-.gallery_slider-arrows::after {
+  /*&::after{
   content: "";
   width: 105px;
   height: 62px;
@@ -159,6 +157,8 @@ h2 {
   position: absolute;
   top: 0;
   left: 120px;
+
+}*/
 }
 
 .gallery_slider-arrows .arrow-backward {
@@ -227,8 +227,7 @@ h2 {
   top: 0;
   height: 100px;
   width: 100%;
-  position: fixed;
-  background-color: #FFFFFF;
+  position: absolute;
   font-family: 'Museo Sans Cyrl', sans-serif;
   z-index: 100;
 }
@@ -267,7 +266,7 @@ h2 {
 }
 
 .nav-menu__list a {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .nav-menu__list a:hover {
@@ -288,7 +287,7 @@ h2 {
   padding: 13px 0 9px;
   height: 23px;
   width: 151px;
-  color: #000000;
+  color: #FFFFFF;
   position: relative;
 }
 
@@ -297,7 +296,7 @@ h2 {
   position: absolute;
   top: 15px;
   left: -20px;
-  width: 13px;
+  width: 15px;
   height: 13px;
   background-image: url(../img/tel.svg);
 }
@@ -367,7 +366,7 @@ h2 {
   position: relative;
   width: 16px;
   height: 2px;
-  background-color: #000000;
+  background-color: #FFFFFF;
 }
 
 .menu-icon::before {
@@ -377,7 +376,7 @@ h2 {
   content: '';
   width: 16px;
   height: 2px;
-  background-color: #000000;
+  background-color: #FFFFFF;
   -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
   transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
   transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
@@ -391,7 +390,7 @@ h2 {
   content: '';
   width: 16px;
   height: 2px;
-  background-color: #000000;
+  background-color: #FFFFFF;
   -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
   transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
   transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
@@ -423,7 +422,7 @@ h2 {
 }
 
 .main-screen {
-  margin-top: 100px;
+  margin-top: 0;
   height: 817px;
   background-image: url(../img/header-bg.jpg);
   background-size: cover;
@@ -1416,5 +1415,190 @@ margin-left:50px ;
 
 .slick-list {
   overflow: hidden;
+}
+
+.feedback {
+  background-image: url(../img/feedback_bg2.png);
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: 150% 75%;
+  height: 570px;
+  margin-bottom: 73px;
+}
+
+.feedback .center-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 570px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feedback-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.feedback-title {
+  position: relative;
+}
+
+.feedback-title::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/decorative-dots.svg);
+  width: 31px;
+  height: 5px;
+  top: 93px;
+  left: 5px;
+}
+
+.feedback-text {
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  margin-top: 95px;
+  margin-left: 52px;
+  width: 351px;
+  font-weight: 300;
+  position: relative;
+  line-height: 21px;
+}
+
+.feedback-text::before {
+  content: '';
+  width: 48px;
+  height: 80px;
+  background-image: url(../img/quotes.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -30px;
+  left: -60px;
+}
+
+.feedback-note {
+  font-family: 'ALS Alumna', sans-serif;
+  font-size: 24px;
+  line-height: 125%;
+  width: 372px;
+  margin-top: 140px;
+}
+
+.feedback-btn {
+  position: absolute;
+  padding: 20px 30px;
+  margin-top: 510px;
+}
+
+.feedback-slider {
+  width: 620px;
+  padding-top: 8px;
+}
+
+.feedback-slider .slider-content {
+  margin-left: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feedback-slider .gallery_slider-dots {
+  width: 42px;
+  height: 6px;
+  position: absolute;
+  margin-top: 27px;
+  margin-left: 3px;
+}
+
+.feedback-slider .gallery_slider-arrows {
+  margin-top: 28px;
+  margin-left: 503px;
+}
+
+.feedback-slider::after {
+  display: none;
+}
+
+.instagram {
+  height: 1071px;
+  width: 100%;
+  text-align: center;
+  background-position: 0% 0%;
+  background-size: 60%;
+}
+
+.instagram-title {
+  margin-bottom: 34px;
+}
+
+.instagram-text {
+  width: 490px;
+  margin: 0 auto 32px;
+}
+
+.instagram-hashtag {
+  color: #DBB972;
+  font-size: 20px;
+}
+
+.instagram-gallery {
+  width: 1137px;
+  height: 753px;
+  margin: 45px auto 45px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-gap: 15px;
+}
+
+.instagram-btn {
+  display: inline-block;
+  padding: 20px 60px 20px 35px;
+  border-radius: 30px;
+  background: linear-gradient(251.94deg, #DBB972 14.36%, #F3D28E 51.49%, #DBB972 91.31%);
+  color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 47px;
+}
+
+.instagram-btn::after {
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-image: url(../img/insta-logo.svg);
+  position: absolute;
+  right: 30px;
+}
+
+.instagram-btn:hover, .instagram-btn :focus {
+  background: linear-gradient(80deg, #F3D28E 14.36%, #DBB972 51.49%, #DBB972 91.31%);
+  -webkit-box-shadow: 0px 4px 30px rgba(219, 185, 114, 0.6);
+          box-shadow: 0px 4px 30px rgba(219, 185, 114, 0.6);
+}
+
+.instagram-btn:active {
+  -webkit-box-shadow: inset 0px 4px 30px -1px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0px 4px 30px -1px rgba(0, 0, 0, 0.6);
+}
+
+hr {
+  height: 2px;
+  color: #f8f8f8;
+  margin: 47px 0 47px;
 }
 /*# sourceMappingURL=style.css.map */
