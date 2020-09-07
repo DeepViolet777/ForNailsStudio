@@ -106,6 +106,11 @@ h2 {
 	margin: 0;
 }
 
+
+.gold{
+	color:$gold;
+	}
+
 .invisible {
 	visibility: hidden;
 }
@@ -113,7 +118,7 @@ h2 {
 .center-container{
 width: 1138px;
 margin: 0 auto;
-//border: 2px solid green;
+
 }
 
 
@@ -1517,8 +1522,10 @@ display: none;
 height: 1071px;
 width: 100%;
 text-align: center;
-background-position: 0% 0%;
-background-size: 60%;
+background-image: url(../img/instagram_bg.png);
+background-size: 100% 60%;
+background-position:100% 97%;
+background-repeat: no-repeat;
 
 &-title{
 
@@ -1581,3 +1588,143 @@ height:2px;
 color: #f8f8f8;
 margin: 47px 0 47px;
 }
+
+.prices{
+margin-top: 110px;
+padding-bottom: 73px;
+
+.center-container{
+display:flex;
+
+}
+
+&-title{
+ 
+position: relative;
+
+&::after{
+	position: absolute;
+	content: "";
+	background-image: url(../img/decorative-dots.svg);
+	width: 31px;
+	height: 5px;
+	top: 93px;
+	left: 0;
+ }
+}
+
+&-img{
+margin-left: -155px;
+}
+
+.content-wrapper{
+display: flex;
+flex-direction: column;
+margin-left: 65px;
+}
+
+&-list{
+margin-top: 90px;
+
+&_item{
+margin-bottom: 35px;
+@include font-museo;
+font-weight: 300;
+font-size: 24px;
+line-height: 130%;
+color: #000000;
+opacity: 0.8;
+transition: all ease 0.5s;
+position: relative;
+
+
+}
+}
+
+&-sublist{
+
+&_item{
+font-size: 16px;
+line-height: 130%;
+display: flex;
+align-items: center;
+color: #000000;
+opacity: 0.8;
+}
+
+}
+
+.toggle-btn{
+font-size: 30px;
+position: relative;
+width: 16px;
+height: 16px;
+display:block;
+}
+
+
+.toggle-btn_wrapper {
+	width: 16px;
+	height: 16px;
+	justify-content: center;
+	align-items: center;
+	position:absolute;
+	left: 510px;
+	top: 10px;
+}
+
+
+.toggle-btn::before {
+	position: absolute;
+	left: 7px;
+	top: -2px;
+	content: '';
+	width: 2px;
+	height: 16px;
+	background-color: #000000;
+	transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+
+}
+
+.toggle-btn::after {
+	position: absolute;
+	left: 0;
+	top: 5px;
+	content: '';
+	width: 16px;
+	height: 2px;
+	background-color: #000000;
+	transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+
+}
+
+//.toggle-btn.toggle-btn-active {
+//	background-color: transparent;
+//}
+
+.toggle-btn.toggle-btn-active::before {
+	transform: rotate(45deg);
+	top: -2px;
+	transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.toggle-btn.toggle-btn-active::after {
+	transform: rotate(45deg);
+	top: 5px;
+	transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+}
+
+
+.hidden{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	border: 0;
+	clip: rect(0 0 0 0);
+}
+

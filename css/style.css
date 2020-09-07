@@ -88,6 +88,10 @@ h2 {
   margin: 0;
 }
 
+.gold {
+  color: #DBB972;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -1532,8 +1536,10 @@ margin-left:50px ;
   height: 1071px;
   width: 100%;
   text-align: center;
-  background-position: 0% 0%;
-  background-size: 60%;
+  background-image: url(../img/instagram_bg.png);
+  background-size: 100% 60%;
+  background-position: 100% 97%;
+  background-repeat: no-repeat;
 }
 
 .instagram-title {
@@ -1600,5 +1606,156 @@ hr {
   height: 2px;
   color: #f8f8f8;
   margin: 47px 0 47px;
+}
+
+.prices {
+  margin-top: 110px;
+  padding-bottom: 73px;
+}
+
+.prices .center-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.prices-title {
+  position: relative;
+}
+
+.prices-title::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/decorative-dots.svg);
+  width: 31px;
+  height: 5px;
+  top: 93px;
+  left: 0;
+}
+
+.prices-img {
+  margin-left: -155px;
+}
+
+.prices .content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 65px;
+}
+
+.prices-list {
+  margin-top: 90px;
+}
+
+.prices-list_item {
+  margin-bottom: 35px;
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 130%;
+  color: #000000;
+  opacity: 0.8;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  position: relative;
+}
+
+.prices-sublist_item {
+  font-size: 16px;
+  line-height: 130%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+  opacity: 0.8;
+}
+
+.prices .toggle-btn {
+  font-size: 30px;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.prices .toggle-btn_wrapper {
+  width: 16px;
+  height: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 510px;
+  top: 10px;
+}
+
+.prices .toggle-btn::before {
+  position: absolute;
+  left: 7px;
+  top: -2px;
+  content: '';
+  width: 2px;
+  height: 16px;
+  background-color: #000000;
+  -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+}
+
+.prices .toggle-btn::after {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  content: '';
+  width: 16px;
+  height: 2px;
+  background-color: #000000;
+  -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+}
+
+.prices .toggle-btn.toggle-btn-active::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -2px;
+  -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
+}
+
+.prices .toggle-btn.toggle-btn-active::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 5px;
+  -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 /*# sourceMappingURL=style.css.map */
